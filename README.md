@@ -1,7 +1,7 @@
 V-MSG: Simple notify handler component for Vue.js
 ===============
 
-![Preview](https://nasa8x.github.com/v-msg/www/preview.png)
+![Preview](https://github.com/nasa8x/v-msg/raw/master/www/preview.png)
 
 ## Demo
 
@@ -50,6 +50,10 @@ this.$msg.alert('This is a notification');
 this.$msg.info('This is a notification', { timeout: 3000 });
 
 ```
+
+## Donate
+
+[![](https://i.imgur.com/z0p6RvA.png)](http://vrl.to/ec5cfbae)[![](https://i.imgur.com/bEUNBGz.png)](http://vrl.to/ec5cfbae)
 
 ### MIT License
 
