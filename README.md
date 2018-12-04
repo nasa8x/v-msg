@@ -1,4 +1,4 @@
-V-MSG: Simple notify handler component for Vue.js
+V-MSGX: Simple notify handler component for Vue.js
 ===============
 
 ![Preview](https://github.com/nasa8x/v-msg/raw/master/www/preview.png)
@@ -10,14 +10,14 @@ V-MSG: Simple notify handler component for Vue.js
 ## Get Started
 
 ```
-npm i v-msg
+npm i v-msgx
 ```
 
 ```
 import 'v-msg/dist/msg.min.css';
 
 import Vue from 'vue';
-import Msg from 'v-msg';
+import Msg from 'v-msgx';
 
 
 // Global register

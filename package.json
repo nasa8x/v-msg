@@ -1,5 +1,5 @@
 {
-  "name": "v-msg",
+  "name": "v-msgx",
   "version": "1.0.0",
   "description": "Simple notify handler component for Vue.js",
   "main": "./dist/msg.min.js",
