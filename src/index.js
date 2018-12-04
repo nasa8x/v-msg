@@ -6,10 +6,8 @@ import Msg from './msg.vue';
 
 Msg.install = function (Vue, options = {}) {
 
-    Vue.prototype.$msg = new (Vue.extend(Msg))({ propsData: options })
-    // Vue.toaster = Vue.prototype.$toaster
+    Vue.prototype.$Msg = new (Vue.extend(Msg))({ propsData: options })
+    
 }
-
-// module.exports = Msg
 
 export default Msg;

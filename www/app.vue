@@ -22,59 +22,59 @@
         <div class="container">
             <p>
                 <button class="btn btn-primary" @click="show('top-left')">top-left</button>
-                <pre data-lang="js"><code>this.$msg.success('This is a notification', { position: 'top-left' });</code></pre>
+                <pre data-lang="js"><code>this.$Msg.success('This is a notification', { position: 'top-left' });</code></pre>
             </p>
             <p>
                 <button class="btn btn-primary" @click="show('top-right')">top-right</button>
-                <pre data-lang="js"><code>this.$msg.success('This is a notification', { position: 'top-right' });</code></pre>
+                <pre data-lang="js"><code>this.$Msg.success('This is a notification', { position: 'top-right' });</code></pre>
             </p>
             <p>
                 <button class="btn btn-primary" @click="show('top-center')">top-center</button>
-                <pre data-lang="js"><code>this.$msg.success('This is a notification', { position: 'top-center' });</code></pre>
+                <pre data-lang="js"><code>this.$Msg.success('This is a notification', { position: 'top-center' });</code></pre>
             </p>
             <p>
                 <button class="btn btn-primary" @click="show('bottom-left')">bottom-left</button>
-                <pre data-lang="js"><code>this.$msg.success('This is a notification', { position: 'bottom-left' });</code></pre>
+                <pre data-lang="js"><code>this.$Msg.success('This is a notification', { position: 'bottom-left' });</code></pre>
             </p>
             <p>
                 <button class="btn btn-primary" @click="show('bottom-right')">bottom-right</button>
-                <pre data-lang="js"><code>this.$msg.success('This is a notification', { position: 'bottom-right' });</code></pre>
+                <pre data-lang="js"><code>this.$Msg.success('This is a notification', { position: 'bottom-right' });</code></pre>
             </p>
             <p>
                 <button class="btn btn-primary" @click="show('bottom-center')">bottom-center</button>
-                <pre data-lang="js"><code>this.$msg.success('This is a notification', { position: 'bottom-center' });</code></pre>
+                <pre data-lang="js"><code>this.$Msg.success('This is a notification', { position: 'bottom-center' });</code></pre>
             </p>
 
 
             <p>
                 <button class="btn btn-primary" @click="alert()">alert</button>
-                <pre data-lang="js"><code>this.$msg.alert('This is a notification');</code></pre>
+                <pre data-lang="js"><code>this.$Msg.alert('This is a notification');</code></pre>
             </p>
 
             <p>
                 <button class="btn btn-primary" @click="confirm()">confirm</button>
-                <pre data-lang="js"><code>this.$msg.confirm('Are you sure want to delete this item?').then(({ data }) => {
+                <pre data-lang="js"><code>this.$Msg.confirm('Are you sure want to delete this item?').then(({ data }) => {
                         alert('You choose: ' + data);
                     })</code></pre>
             </p>
 
             <p>
                 <button class="btn btn-info" @click="info()">info</button>
-                <pre data-lang="js"><code>this.$msg.info('This is a notification');</code></pre>
+                <pre data-lang="js"><code>this.$Msg.info('This is a notification');</code></pre>
             </p>
 
             <p>
                 <button class="btn btn-warning" @click="warning()">warning</button>
-                <pre data-lang="js"><code>this.$msg.warning('This is a notification');</code></pre>
+                <pre data-lang="js"><code>this.$Msg.warning('This is a notification');</code></pre>
             </p>
             <p>
                 <button class="btn btn-danger" @click="error()">error</button>
-                <pre data-lang="js"><code>this.$msg.error('This is a notification');</code></pre>
+                <pre data-lang="js"><code>this.$Msg.error('This is a notification');</code></pre>
             </p>
 
             <p>
                 <button class="btn btn-primary" @click="timeout()">timeout</button>
-                <pre data-lang="js"><code>this.$msg.info('This is a notification',{timeout: 3000});</code></pre>
+                <pre data-lang="js"><code>this.$Msg.info('This is a notification',{timeout: 3000});</code></pre>
             </p>
 
 
@@ -106,30 +106,30 @@
 
         methods: {
             show(p) {
-                this.$msg.success('This is a notification', { position: p });
+                this.$Msg.success('This is a notification', { position: p });
             },
             error() {
-                this.$msg.error('This is a notification');
+                this.$Msg.error('This is a notification');
             },
             info() {
-                this.$msg.info('This is a notification');
+                this.$Msg.info('This is a notification');
             },
 
             warning() {
-                this.$msg.warning('This is a notification');
+                this.$Msg.warning('This is a notification');
             },
 
             alert() {
-                this.$msg.alert('This is a notification');
+                this.$Msg.alert('This is a notification');
             },
             timeout() {
-                this.$msg.info('This is a notification', { timeout: 3000 });
+                this.$Msg.info('This is a notification', { timeout: 3000 });
             },
 
             confirm() {
-                this.$msg.confirm('Are you sure want to delete this item?').then(({ data }) => {
+                this.$Msg.confirm('Are you sure want to delete this item?').then(({ data }) => {
                     //alert('You choose: ' + data);
-                    this.$msg.alert('You choose: ' + data);
+                    this.$Msg.alert('You choose: ' + data);
                 })
             }
 

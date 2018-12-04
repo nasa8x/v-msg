@@ -14,7 +14,7 @@ npm i v-msgx
 ```
 
 ```
-import 'v-msg/dist/msg.min.css';
+import 'v-msgx/dist/msg.min.css';
 
 import Vue from 'vue';
 import Msg from 'v-msgx';
@@ -26,28 +26,28 @@ Vue.use(Msg);
 
 ```js
 // top-left, top-right, top-center, bottom-left, bottom-right, bottom-center
-this.$msg.success('This is a notification', { position: 'top-left' });
+this.$Msg.success('This is a notification', { position: 'top-left' });
 
 // notify info theme
-this.$msg.info('This is a notification');
+this.$Msg.info('This is a notification');
 
 // notify warning theme
-this.$msg.warning('This is a notification');
+this.$Msg.warning('This is a notification');
 
 // notify error theme
-this.$msg.error('This is a notification');
+this.$Msg.error('This is a notification');
 
 // alert
-this.$msg.alert('This is a notification');
+this.$Msg.alert('This is a notification');
 
 // confirm
- this.$msg.confirm('Are you sure want to delete this item?').then(({ data }) => {
+ this.$Msg.confirm('Are you sure want to delete this item?').then(({ data }) => {
                     //alert('You choose: ' + data);
-                    this.$msg.alert('You choose: '+ data);
+                    this.$Msg.alert('You choose: '+ data);
                 });
 
 // custom timeout
-this.$msg.info('This is a notification', { timeout: 3000 });
+this.$Msg.info('This is a notification', { timeout: 3000 });
 
 ```
 
