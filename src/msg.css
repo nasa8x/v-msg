@@ -63,13 +63,17 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-.v-msg-title {
+h6.v-msg-title {
   font-weight: bold;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 1rem;
 }
 
 .v-msg-alert .v-msg-title{
   padding-top: 10px;
   padding-bottom: 10px;
+  
 }
 
 .v-msg-alert .v-msg-content{
