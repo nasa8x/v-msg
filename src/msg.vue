@@ -78,7 +78,7 @@
         <transition enter-active-class="animated fadeInDown" leave-active-class="animated fadeOut" v-if="msg">
             <div class="v-msg-container v-msg-alert">
                 <div class="v-msg-box">
-                    <button aria-label="Close" class="close" type="button" @click="close(1)">
+                    <button aria-label="Close" class="close" type="button" @click="close(0)">
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <h6 class="v-msg-title" v-if="msg.title">{{msg.title}}</h6>
