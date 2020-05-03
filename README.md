@@ -1,78 +1,20 @@
-V-MSGX: Simple notify handler component for Vue.js
-===============
+# V-MSG: Simple notify handler component for Vue.js
 
-![Preview](https://github.com/nasa8x/v-msg/raw/master/www/preview.png)
+![Simple notify handler component for Vue.js](https://i.morioh.com/200503/f43131db.jpg)
 
-## Demo
+### Demo
 
-[v-msg](https://nasa8x.github.io/v-msg/dist/www)
-
-## Get Started
-
-```
-npm i v-msgx
-```
-
-```
-import 'v-msgx/dist/msg.min.css';
-
-import Vue from 'vue';
-import Msg from 'v-msgx';
+☞ [Markdown Editor](https://lab.morioh.com/v-msg/)
 
 
-// Global register
-Vue.use(Msg);
-```
+### How to use
 
-```js
-// top-left, top-right, top-center, bottom-left, bottom-right, bottom-center
-this.$Msg.success('This is a notification', { position: 'top-left' });
+☞ [V-MSGX: Simple notify handler component for Vue.js Guide](https://morioh.com/p/04c52630e8a9)
 
-// notify info theme
-this.$Msg.info('This is a notification');
+### Recommended
 
-// notify warning theme
-this.$Msg.warning('This is a notification');
+☞ [What's new in Bootstrap 5](https://morioh.com/p/46e9af3b9b04)
 
-// notify error theme
-this.$Msg.error('This is a notification');
+☞ [Lightbox Photo Grid and Slideshow component for Vue.JS](https://morioh.com/p/da2adf3f7eac)
 
-// alert
-this.$Msg.alert('This is a notification');
-
-// confirm
- this.$Msg.confirm('Are you sure want to delete this item?').then(({ data }) => {
-                    //alert('You choose: ' + data);
-                    this.$Msg.alert('You choose: '+ data);
-                });
-
-// custom timeout
-this.$Msg.info('This is a notification', { timeout: 3000 });
-
-```
-
-## Donate
-
-[![](https://i.imgur.com/z0p6RvA.png)](http://vrl.to/ec5cfbae)[![](https://i.imgur.com/bEUNBGz.png)](http://vrl.to/ec5cfbae)
-
-### MIT License
-
-Copyright (c) 2018 Nasa8x
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+☞ [Building a simple Applications with Vue 3](https://morioh.com/p/d5f7657ee12d)

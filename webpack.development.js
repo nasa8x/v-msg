@@ -206,7 +206,7 @@ module.exports = function (env) {
                     minify: {
                         collapseWhitespace: true,
                         //preserveLineBreaks: true,                    
-                        //removeComments: true,
+                        removeComments: true,
                         collapseBooleanAttributes: true,
                         removeEmptyAttributes: true
                     }
@@ -220,81 +220,41 @@ module.exports = function (env) {
                     externals: [
                         {
                             module: 'jquery',
-                            entry: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
+                            entry: 'https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js',
                             global: 'jQuery'
                         },
                         {
                             module: 'Popper',
-                            entry: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/umd/popper.min.js'
+                            entry: 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
                         },
                         {
                             module: 'boostrap',
-                            entry: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'
+                            entry: 'https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js'
                         },
                         {
                             module: 'vue',
                             global: 'Vue',
-                            entry: 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'
-                        },
-                        // {
-                        //     module: 'vue-router',
-                        //     global: 'VueRouter',
-                        //     entry: 'https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.min.js'
-                        // },
-
-                        // {
-                        //     module: 'vuex',
-                        //     global: 'Vuex',
-                        //     entry: 'https://cdnjs.cloudflare.com/ajax/libs/vuex/3.0.1/vuex.min.js'
-                        // },
-                        // {
-                        //     module: 'axios',
-                        //     global: 'axios',
-                        //     entry: 'https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js'
-                        // },
-                        // {
-                        //     module: 'lodash',
-                        //     global: '_',
-                        //     entry: 'https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js'
-                        // },
-
-                        // {
-                        //     module: 'moment',
-                        //     global: 'moment',
-                        //     entry: 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js'
-                        // },
-
-
-                        // {
-
-                        //     module: 'remark',
-                        //     entry: [
-                        //         '//l.allcdn.org/remark/v4.1/bootstrap.min.css',
-                        //         '//l.allcdn.org/remark/v4.1/bootstrap-extend.min.css',
-                        //         '//l.allcdn.org/remark/v4.1/iconbar/site.min.css',
-                        //         // '//l.allcdn.org/remark/v4.1/skins/green.min.css'
-                        //     ],
-
-                        // },
-
-                         {
-
-                            module: 'bootstrap',
-                            entry: [
-                                'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css',                             
-                                // '//l.allcdn.org/remark/v4.1/skins/green.min.css'
-                            ],
-
+                            entry: 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js'
                         },
 
-                        
+
                         {
-                            module: 'fonts',
-                            entry: [
-                                '//l.allcdn.org/fa/v5.3.1/css/all.min.css'
-                            ],
+                            module: 'viralroll',
+                            entry: 'https://cdn.viralroll.net/js/widget.js'
                         },
 
+                        {
+
+                            module: 'css',
+                            entry: [
+                                
+                                'https://cdn.jsdelivr.net/npm/morioh@1.0.9/dist/css/morioh.min.css',
+                                'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css',
+                                'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css',
+
+                            ],
+
+                        },
 
 
                     ]
